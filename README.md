@@ -36,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![TimeTable](./assets/screenshot.jpg)
+![TimeTable](./assets/screenshot.JPG)
 
 A simple calendar, it tells you the current day, goes from 9 to 5 (because who wants to work extra lol) and a save option
 It locally saves the tasks given in case you want to load the page later.
