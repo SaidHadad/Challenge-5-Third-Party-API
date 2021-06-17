@@ -2,11 +2,17 @@
 var currentDay = moment().format("[Today is ] dddd, MMMM Do");
 var currentTime = moment().format('hh:mm:ss a');
 var finalHour = "";
-var timeMap = new Map();
-
+let timeMap = new Map();
 
 // take the time and display it on currentDay
 $("#currentDay").replaceWith(currentDay);
+
+// load any saved data from localStorage into the timeMap Map
+if (localStorage.getItem("myMap")) {
+    timeMap = new Map(JSON.parse(localStorage.myMap));
+} else {
+    let timeMap = new Map();
+}
 
 for (let hour = 9; hour < 18; hour++) {
 
@@ -63,3 +69,25 @@ for (let hour = 9; hour < 18; hour++) {
     $("#main-container").append(mainDiv);
 
 }
+
+timeMap.forEach(function (text, key) {
+    // load anything saved in localStorage onto the calendar
+    let textAreaVar = "#textarea" + key;
+    document.querySelector(textAreaVar).value = text;
+});
+
+// when the user clicks the save button on that hour it will be written to memory and persist with window reloads
+$(".saveBtn").on('click', function () {
+    if(this.id === "button9") {
+        textArea = "#textarea" + (this.id.slice(-1));
+        textAreaValue = $(textArea).val();
+        timeMap.set(this.id.slice(-1), textAreaValue);
+    }
+    else {
+        textArea = "#textarea" + (this.id.slice(-2));
+        textAreaValue = $(textArea).val();
+        timeMap.set(this.id.slice(-2), textAreaValue);
+    }
+    
+    localStorage.myMap = JSON.stringify(Array.from(timeMap.entries()));
+});
