@@ -96,6 +96,7 @@ Free to use, share the knowledge!!.
 Said Hadad - saiddavid.hadad@gmail.com
 
 Project Link: [https://github.com/SaidHadad/Challenge-5-Third-Party-API](https://github.com/SaidHadad/Challenge-5-Third-Party-API)
+
 Live Page: [https://saidhadad.github.io/Challenge-5-Third-Party-API/](https://saidhadad.github.io/Challenge-5-Third-Party-API/)
 
 
