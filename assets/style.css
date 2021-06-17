@@ -25,6 +25,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  padding: 0;
 }
 
 .main-div {
@@ -67,20 +68,10 @@ textarea {
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  text-align: center;
-  width: 7%;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .saveBtn i:hover {
   font-size: 50px;
   transition: all .3s ease-in-out;
-}
-
-#currentDay {
-  font-size: 45px;
-}
-
-i {
-  font-size: 24px;
 }
