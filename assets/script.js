@@ -31,22 +31,22 @@ for (let hour = 9; hour < 18; hour++) {
         finalHour = (hour + " AM")
     }
     timeDiv.text(finalHour);
-    timeDiv.addClass('hour col-1 text-center d-flex flex-column justify-content-center');
+    timeDiv.addClass('hour col-2 col-md-1 text-center d-flex flex-column justify-content-center');
     
 
     // This is the second column and it contains the textarea with the task description
     var taskDiv = $("<div>");
-    var textDescription = $("<textarea>");
+    var textDescription = $("<textarea>").addClass("p-2");
     textDescription.attr("id", "textarea" + hour);
 
     taskDiv.append(textDescription);
-    taskDiv.addClass("description col-10");
+    taskDiv.addClass("description col-8 col-md-10");
 
     // third column contains the save button
     var saveIcon = $("<i>");
     saveIcon.addClass("far fa-save");
     var saveDiv = $("<div>");
-    saveDiv.addClass("saveBtn col-1 text-center d-flex flex-column justify-content-center").attr("id", "button" + hour);
+    saveDiv.addClass("saveBtn col-2 col-md-1 text-center d-flex flex-column justify-content-center").attr("id", "button" + hour);
     
     saveDiv.append(saveIcon);
 
@@ -70,6 +70,7 @@ for (let hour = 9; hour < 18; hour++) {
 
 }
 
+// At load, populate the calendar with localStorage info
 timeMap.forEach(function (text, key) {
     // load anything saved in localStorage onto the calendar
     let textAreaVar = "#textarea" + key;
