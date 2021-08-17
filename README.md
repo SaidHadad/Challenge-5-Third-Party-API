@@ -1,9 +1,8 @@
 <!-- PROJECT LOGO -->
-  <h1 align="center">5. Third-Party APIs Challenge: Work Day Scheduler</h1>
+  <h1 align="center">Third-Party APIs: Work Day Scheduler</h1>
 
   <p align="center">
-    A calendar application that allows a user to save events for each hour of the day. Runs in the browser and features dynamically updated
-    HTML and CSS powered by JQuery.
+    A calendar application that allows a user to save events for each hour of the day. Runs in the browser and features dynamically updated HTML and CSS powered by JQuery.
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -95,9 +94,9 @@ Free to use, share the knowledge!!.
 
 Said Hadad - saiddavid.hadad@gmail.com
 
-Project Link: [https://github.com/SaidHadad/Challenge-5-Third-Party-API](https://github.com/SaidHadad/Challenge-5-Third-Party-API)
+Project Link: [Repository](https://github.com/SaidHadad/Third-Party-API)
 
-Live Page: [https://saidhadad.github.io/Challenge-5-Third-Party-API/](https://saidhadad.github.io/Challenge-5-Third-Party-API/)
+Live Page: [Live PaGE](https://saidhadad.github.io/Third-Party-API/)
 
 
 
